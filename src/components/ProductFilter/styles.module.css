@@ -1,0 +1,76 @@
+.selectWrapper {
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #f5af19;
+}
+
+.select {
+    height: 100%;
+    padding: 2px 10px 2px 4px;
+    font-size: 18px;
+    border: 0;
+    align-self: center;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.item {
+    color: #000;
+    text-align: left;
+    font-size: small;
+}
+
+.arrow {
+    height: 15px;
+    width: 15px;
+    fill: #fff;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.search {
+    height: 22px;
+    width: 22px;
+    fill: #fff;
+    pointer-events: none;
+    top: 50%;
+    right: 6px;
+    z-index: 1;
+}
+
+.navigation {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    border: 2px solid #f5af19;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.input {
+    padding: 8px 12px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    flex-grow: 1;
+    min-width: 80px;
+    border-radius: 6px;
+}
+
+.deleteButton {
+    width: 5%;
+    outline: none;
+    color: rgb(210, 214, 216);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
