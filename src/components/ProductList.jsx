@@ -4,6 +4,7 @@ import ProductItem from './ProductItem/ProductItem';
 import { ProductFilter } from './ProductFilter/ProductFilter';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import Loader from './Loader/Loader';
 
 const ProductList = () => {
     const { isLoading, filteredItems, page, onPageChange, onFilterChange, pages } = useProducts();
@@ -14,7 +15,7 @@ const ProductList = () => {
             <ProductFilter onSubmit={onFilterChange} disabled={isLoading} />
             <main>
                 {isLoading ? (
-                    <p>Loading...</p>
+                    <Loader />
                 ) : (
                     filteredItems?.map((item) => (
                         <ProductItem key={item.id} product={item} />

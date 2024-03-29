@@ -61,6 +61,16 @@ export const ProductFilter = memo(function ProductFilter({ disabled, onSubmit })
     [state.category]
   );
 
+  const handleKeyDown = useCallback(
+    (event) => {
+      if (event.key === 'Enter') {
+        handleSubmit();
+      }
+    },
+    [handleSubmit]
+  );
+
+
   return (
     <>
       <div className={styles.navigation}>
@@ -80,6 +90,7 @@ export const ProductFilter = memo(function ProductFilter({ disabled, onSubmit })
           className={styles.input}
           placeholder={'Введите значение'}
           onChange={handleValueChange}
+          onKeyDown={handleKeyDown}
           min={state.category === 'price' ? 0 : undefined}
         />
           <button onClick={handleReset} className={styles.deleteButton}>
