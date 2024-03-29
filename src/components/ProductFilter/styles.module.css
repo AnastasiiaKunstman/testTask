@@ -17,7 +17,7 @@
 }
 
 .select {
-    width: 100%;
+    width: max-content;
     height: 100%;
     font-size: clamp(14px, 1.1vw, 18px);
     border: 0;

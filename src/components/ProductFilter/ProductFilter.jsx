@@ -7,7 +7,7 @@ import { NavButton } from '../NavButton/NavButton';
 const options = [
   { value: 'product', label: 'Продукт' },
   { value: 'brand', label: 'Бренд' },
-  { value: 'price', label: 'Стоимость' },
+  { value: 'price', label: 'Цена' },
 ];
 
 export const ProductFilter = memo(function ProductFilter({ disabled, onSubmit }) {
